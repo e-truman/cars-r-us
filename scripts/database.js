@@ -57,3 +57,23 @@ export const getWheels = () => {
 export const getCarOrders = () => {
     return database.carOrders.map(order => ({...order}))
 }
+
+export const setInterior = (id) => {
+    database.orderBuilder.interiorId = id
+    // database.orderBuilder.stylePrice = price
+}
+
+export const setWheel = (id) => {
+    database.orderBuilder.wheelId = id
+    // database.orderBuilder.stylePrice = price
+}
+
+export const setPaint = (id) => {
+    database.orderBuilder.paintId = id
+    // database.orderBuilder.stylePrice = price
+}
+
+export const setTech = (id) => {
+    database.orderBuilder.techId = id
+    // database.orderBuilder.stylePrice = price
+}

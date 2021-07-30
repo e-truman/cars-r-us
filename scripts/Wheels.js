@@ -1,1 +1,1 @@
-import { getWheels} from "./database.js"
+import { getWheels, setWheel} from "./database.js"
