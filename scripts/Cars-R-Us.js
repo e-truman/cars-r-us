@@ -4,15 +4,14 @@ import { Technologies } from "./Technologies.js"
 import { Orders } from "./Orders.js"
 import { Colors } from "./PaintColors.js"
 import { Wheels } from "./Wheels.js"
-
-import { addCustomOrder } from "./database.js"
+import { addCustomCarOrder } from "./database.js"
 
 
 document.addEventListener(
     "click",
     (event) => {
         if (event.target.id === "orderButton") {
-            addCustomOrder()
+            addCustomCarOrder()
         }
     }
 )

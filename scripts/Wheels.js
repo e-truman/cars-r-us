@@ -1,6 +1,6 @@
 import { getWheels, setWheel} from "./database.js"
 
-const interiors = getWheels()
+const wheels = getWheels()
 
 document.addEventListener(
     "change",
@@ -11,11 +11,11 @@ document.addEventListener(
     }
 )
 
-export const Interiors = () => {
+export const Wheels = () => {
     let html = "<ul>"
 
     // Use .map() for converting objects to <li> elements
-    const listItems = interiors.map(interior => {
+    const listItems = wheels.map(wheel => {
         return `<li>
             <input type="radio" name="wheel" value="${wheel.id}" /> ${wheel.wheel}
         </li>`
