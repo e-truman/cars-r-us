@@ -32,7 +32,8 @@ const database = {
             colorId: 3,
             interiorId: 2,
             techId: 3,
-            wheelId: 4
+            wheelId: 4,
+            timestamp: 4567
         }
     ]
 }

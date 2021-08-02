@@ -46,7 +46,7 @@ const buildOrderListItem = (order) => {
     })
     
     return `<li>
-        Order #${order.id} cost ${costString}
+        Order #${order.id} costs ${costString} and was placed on ${order.timestamp}
     </li>`
 
 

@@ -19,33 +19,33 @@ document.addEventListener(
 
 export const CarsRUs = () => {
     return `
-        <h1>Cars-R-Us</h1>
+        <h1 class="title" >CARS-R-US</h1>
 
         <article class="choices">
             <section class="choices__colors options">
-                <h2>Paint Colors</h2>
+                <h2 class= "choices__title">Paint Colors</h2>
                 ${Colors()}
             </section>
             <section class="choices__interiors options">
-                <h2>Interiors</h2>
+                <h2 class="choices__title">Interiors</h2>
                 ${Interiors()}
             </section>
             <section class="choices__wheels options">
-                <h2>Wheel Options</h2>
+                <h2 class="choices__title">Wheel Options</h2>
                 ${Wheels()}
             </section>
             <section class="choices__technologies options">
-                 <h2>Technology Options</h2>
+                 <h2 class="choices__title">Technology Options</h2>
                  ${Technologies()}
              </section>
         </article>
 
-        <article>
+        <article class="button">
             <button id="orderButton">Create Custom Order</button>
         </article>
 
         <article class="customOrders">
-            <h2>Custom Car Orders</h2>
+            <h2 class="choices__title">Custom Car Orders</h2>
             ${Orders()}
         </article>
     `
