@@ -1,5 +1,5 @@
 
-import { Interiors} from "./Interiors.js"
+import { Interiors } from "./Interiors.js"
 import { Technologies } from "./Technologies.js"
 import { Orders } from "./Orders.js"
 import { Colors } from "./PaintColors.js"
@@ -22,19 +22,19 @@ export const CarsRUs = () => {
         <h1>Cars-R-Us</h1>
 
         <article class="choices">
-            <section class="choices__metals options">
+            <section class="choices__colors options">
                 <h2>Paint Colors</h2>
                 ${Colors()}
             </section>
-            <section class="choices__sizes options">
+            <section class="choices__interiors options">
                 <h2>Interiors</h2>
                 ${Interiors()}
             </section>
-            <section class="choices__styles options">
+            <section class="choices__wheels options">
                 <h2>Wheel Options</h2>
                 ${Wheels()}
             </section>
-            <section class="choices__styles options">
+            <section class="choices__technologies options">
                  <h2>Technology Options</h2>
                  ${Technologies()}
              </section>

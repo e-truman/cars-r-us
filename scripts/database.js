@@ -7,10 +7,10 @@ const database = {
         { id: 4, color: "Spring Green", price: 1165 }
     ],
     interiors: [
-        { id: 1, meterial: "Beige Fabric", price: 1405 },
-        { id: 2, meterial: "Charcoal Fabric", price: 1182 },
-        { id: 3, meterial: "White Leather", price: 1470 },
-        { id: 4, meterial: "Black Leather", price: 1990 }
+        { id: 1, material: "Beige Fabric", price: 1405 },
+        { id: 2, material: "Charcoal Fabric", price: 1182 },
+        { id: 3, material: "White Leather", price: 1470 },
+        { id: 4, material: "Black Leather", price: 1990 }
     ],
     technologies: [
         { id: 1, tech: "Basic Package", price: 1200.42 },
@@ -84,14 +84,14 @@ export const addCustomCarOrder = () => {
     const newOrder = {...database.orderBuilder}
 
     // Add a new primary key to the object
-    const lastIndex = database.customOrders.length - 1
-    newOrder.id = database.customOrders[lastIndex].id + 1
+    const lastIndex = database.orders.length - 1
+    newOrder.id = database.orders[lastIndex].id + 1
 
     // Add a timestamp to the order
     newOrder.timestamp = Date.now()
 
     // Add the new order object to custom orders state
-    database.customOrders.push(newOrder)
+    database.orders.push(newOrder)
 
     // Reset the temporary state for user choices
     database.orderBuilder = {}
