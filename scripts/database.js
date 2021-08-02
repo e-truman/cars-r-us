@@ -68,8 +68,8 @@ export const setWheel = (id) => {
     // database.orderBuilder.stylePrice = price
 }
 
-export const setPaint = (id) => {
-    database.orderBuilder.paintId = id
+export const setColor = (id) => {
+    database.orderBuilder.colorId = id
     // database.orderBuilder.stylePrice = price
 }
 
